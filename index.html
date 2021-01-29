@@ -6,11 +6,56 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>A Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <!--<link rel="icon" type="image/x-icon" href="/favicon.ico" />-->
+        <!--<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <h1>A Form</h1>
+        </header>
+        <section id="formSection">
+            <h2>Form Section</h2>
+            <form>
+                <label for="email" class="block" >Email</label>
+                <input type="text" name="email" id="email" required  class="block" autofocus>
+                <label for="password" class="block" >Password</label>
+                <input type="password" name="password" id="password" class="block" required>
+                <label for="languages" class="inline-block">Language</label>
+                <select name="languages" id="languages">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="portuguese">Poruguese</option>
+                </select>
+                <fieldset>
+                    <legend>Color Choice</legend>
+                    <label for="red">Red</label>
+                    <input type="radio" id="red" name="color" value="red">
+                    <label for="green">Green</label>
+                    <input type="radio" id="green" name="color" value="green">
+                    <label for="blue">Blue</label>
+                    <input type="radio" id="blue" name="color" value="blue">
+                </fieldset>
+                <button id="submit">Submit</button>
+                <button id="reset">Reset</button>
+            </form>
+        </section>
+        <section id="otherSection">
+            <h2>Other Section</h2>
+            <img src="img/turtle_300x200.jpg" alt="Tutrle Swimming" height="200" width="300">
+            <p>Here is a link to a
+                <a href="http://www.kirkwood.edu">Better Page</a>
+            </p>
+        </section>
+        <footer>
+            <!--<p>FOOTER</p>-->
+            <!--<div id="copyright">&copy; 2016</div>-->
+            <p id="copyright"></p>
+        </footer>
     </body>
 </html>

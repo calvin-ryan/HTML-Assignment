@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+	FILE: main.css
+	AUTHOR: Calvin Ryan
+
+        FROM BOB TRAPP
+	DESCRIPTION:
+		This file only exists to demonstrate how to import a CSS file into an
+		HTML page and to provide some rudimentary styling to that page.  As a 
+		result of this, there are no guarantees about the aesthetic properties
+		of the web page described.
+		
+	NOTES:
+		The following notes may be helpful for you later, either as a reminder
+		of the component to use or the component to look up online.
+		
+	ID:  If you assigned an ID to an element, you can reference it in the 
+		stylesheet by using the pound sign and the ID.  For example, if there
+		is an element with the ID of "puppy" it can be referenced as #puppy.
+		
+	CLASS: If you ascribed a class to one or more elements, you can reference 
+		those elements with a leading period.  For example, if you have a class 
+		defined as "pets" you would reference that class with .pets
+		
+	MARGIN: Margins set the amount of space outside of the border (i.e.: between
+		elements.)
+		
+	PADDING: Padding sets the space along the inside of the border and the 
+		elements contained within.
+
+*/
+body {
+	background-color: #ffffff;
+        /*background-color: #000000;*/
+        /*margin: auto; /* center in the page */
+	margin: auto 25px; /* 25px off left border */
+        max-width: 70%;
+}
+
+header, footer {
+    background-color: #1d35b8;
+    color: #ffffff;
+}
+
+header h1 {
+    padding: 20px 0 20px 10px;
+}
+
+form label, fieldset {
+    margin: 10px 0 0 0;
+}
+
+form label {
+    display: block;
+    
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+fieldset {
+    
+}
+fieldset label{
+    display: inline-block;
+}
+
+form button{
+    margin: 20px 5px 0 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    padding: 10px 0 10px 0;
+}
